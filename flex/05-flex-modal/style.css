@@ -20,7 +20,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 16px;
+  gap: 16px;
 }
+
 
 .icon {
   color: royalblue;
@@ -31,8 +35,30 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.card-bottom {
+  display: flex;
+  gap: 5px;
 }
 
 .close-button {
